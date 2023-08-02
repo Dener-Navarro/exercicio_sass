@@ -90,7 +90,7 @@ section {
 }
 
 .product-button:hover {
-    background-color: #4cd137;
+    background-color: variaveis.$corSecundaria
 
     
     &:hover {
@@ -110,7 +110,7 @@ section {
     }
 }
         input {
-            @include elementoForm(); /* inclui o mixin */
+            @include elementoForm(); 
             background-color: transparent;
             border: none;
             border-bottom: 3px solid variaveis.$corPrincipal;
@@ -126,7 +126,7 @@ section {
             color: #fff;
 
             &:hover {
-                background-color: darken(variaveis.$corSecundaria, 15%); /* lighten deixa o ton mais claro*/
+                background-color: darken(variaveis.$corSecundaria, 15%); 
             }
         }
 
